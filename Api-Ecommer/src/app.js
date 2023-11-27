@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const hcRouter = require('./routes/hcRouter');
+const userRouter = require('../src/routes/User/userRouter');
 
 const server = express();
 
@@ -20,6 +21,7 @@ server.use((req, res, next) => {
 });
 
 server.use('/', hcRouter);
+server.use('/', userRouter);
 
 // Error catching endware.
 server.use((err, req, res, next) => {
