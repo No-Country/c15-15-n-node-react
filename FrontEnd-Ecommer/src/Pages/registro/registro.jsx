@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import './login.css'
+import './registro.css'
 
 
 export default function Registro() {
