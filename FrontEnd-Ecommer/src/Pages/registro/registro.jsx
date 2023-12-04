@@ -23,7 +23,7 @@ export default function Registro() {
             <img>imagen a la izquierda</img>
             <p>Registrate</p>
             <p>Ya posees una cuenta? <NavLink to="/login">Inicia Sesion</NavLink></p>
-            <form action="/procesar-formulario" method="post">
+            <form  onSubmit={handleSubmit} action="/procesar-formulario" method="post">
               <label for="nombre">Nombre: </label>
               <input type="text" id="nombre" name="nombre" required></input>
 
@@ -48,7 +48,7 @@ export default function Registro() {
         </div>
 
         <button type="submit" disabled={!aceptaTerminos}>
-          Enviar
+          Crear
         </button>
             </form>
           </section>
