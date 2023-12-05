@@ -1,26 +1,34 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import logo from './Logo.png'
+import izquierda from './Imagen_Izquierda'
 import './registro.css'
 
 
 export default function Registro() {
 
-  const [aceptaTerminos, setAceptaTerminos] = useState(false);
+  // const [aceptaTerminos, setAceptaTerminos] = useState(false);
 
-  const handleAceptaTerminosChange = () => {
-    setAceptaTerminos(!aceptaTerminos);
-  };
+  // const handleAceptaTerminosChange = () => {
+  //   setAceptaTerminos(!aceptaTerminos);
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Lógica para manejar el envío del formulario, por ejemplo, enviar a un servidor.
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Lógica para manejar el envío del formulario, por ejemplo, enviar a un servidor.
+  // };
 
 
   return (
       <>
-          <section id="registro" >
-            <img>Logo</img>
-            <img>imagen a la izquierda</img>
+        <section>
+          <img className='logo' src={logo} alt= "Logo de la empresa"/>
+          <img className='imagen_izquierda' src={izquierda} alt= "imagen decorativa de la empresa"/>
+          
+        </section>
+        
+          {/* <section >
+            <img  />
+            <img />
             <p>Registrate</p>
             <p>Ya posees una cuenta? <NavLink to="/login">Inicia Sesion</NavLink></p>
             <form  onSubmit={handleSubmit} action="/procesar-formulario" method="post">
@@ -37,13 +45,7 @@ export default function Registro() {
               <input type="text" id="contrasena" name="contrasena" required></input>
 
               <div>
-          <input
-            type="checkbox"
-            id="aceptaTerminos"
-            name="aceptaTerminos"
-            checked={aceptaTerminos}
-            onChange={handleAceptaTerminosChange}
-          />
+          <input type="checkbox" id="aceptaTerminos" name="aceptaTerminos checked={aceptaTerminos} onChange={handleAceptaTerminosChange}/>
           <label htmlFor="aceptaTerminos">Acepto los términos y condiciones</label>
         </div>
 
@@ -51,7 +53,7 @@ export default function Registro() {
           Crear
         </button>
             </form>
-          </section>
+          </section> */}
       </>
   )
 }

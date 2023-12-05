@@ -1,0 +1,16 @@
+.logo{
+  display: flex;
+  width: 107px;
+  height: 115px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+imagen_izquierda {
+  width: 848px;
+  height: 712px;
+  flex-shrink: 0;
+  /* background: url(<path-to-image>), lightgray -6.649px 8.449px / 123.944% 98.461% no-repeat, #F3F5F7; */
+  background-blend-mode: multiply, normal;
+}
