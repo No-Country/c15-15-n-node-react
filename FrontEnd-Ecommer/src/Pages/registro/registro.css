@@ -14,3 +14,8 @@ imagen_izquierda {
   /* background: url(<path-to-image>), lightgray -6.649px 8.449px / 123.944% 98.461% no-repeat, #F3F5F7; */
   background-blend-mode: multiply, normal;
 }
+settest{
+  width: 736px;
+  height: 1080px;
+  flex-shrink: 0;
+}

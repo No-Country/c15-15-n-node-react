@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import logo from './Logo.png'
-import izquierda from './Imagen_Izquierda'
+import izquierda from './Imagen_Izquierda.png'
 import './registro.css'
 
 
@@ -20,10 +20,15 @@ export default function Registro() {
 
   return (
       <>
-        <section>
-          <img className='logo' src={logo} alt= "Logo de la empresa"/>
-          <img className='imagen_izquierda' src={izquierda} alt= "imagen decorativa de la empresa"/>
-          
+        <section className='settest'>
+          <div className='logo'>
+            <img src={logo} alt= 'Logo de la empresa'/>
+          </div>
+          <div className='imagen_izquierda'>
+            <img src={izquierda} alt= 'imagen decorativa de la empresa'/>
+          </div>
+
+
         </section>
         
           {/* <section >
