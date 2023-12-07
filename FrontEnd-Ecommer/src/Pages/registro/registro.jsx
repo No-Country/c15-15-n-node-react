@@ -14,23 +14,23 @@ export default function Registro() {
       <>
         <div className="sign-up-popup-desktop">
           <img className="rectangle-1084" src={imagen1}/>
-            <div className="left">
-              <div className="image-placeholder">
-                <img className="paste-image" src={imagen2}/>
-                  <div className="logo-negativo-2">
-                    <img className="tech-solutions-2" src={imagen3}/>
-                      <div className="logo-name">
-                        <div className="hardtech">
-                          <span>
-                            <span className="hardtech-span">HARD</span>
-                            <span className="hardtech-span2">TECH</span>
-                          </span>
-                        </div>
-                        <div class="al-alcance-de-un-click">Al alcance de un click</div>
-                      </div>
+          <div className="left">
+            <div className="image-placeholder">
+              <img className="paste-image" src={imagen2}/>
+              <div className="logo-negativo-2">
+                <img className="tech-solutions-2" src={imagen3}/>
+                <div className="logo-name">
+                  <div className="hardtech">
+                    <span>
+                      <span className="hardtech-span">HARD</span>
+                      <span className="hardtech-span2">TECH</span>
+                    </span>
                   </div>
-              </div> 
-            </div>
+                  <div class="al-alcance-de-un-click">Al alcance de un click</div>
+                </div>
+              </div>
+            </div> 
+          </div>
      {/* <div class="sign-up">
         <div class="title">
           <div class="header">
