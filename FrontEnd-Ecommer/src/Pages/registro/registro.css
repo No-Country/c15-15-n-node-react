@@ -39,3 +39,27 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
   left: 0px;
   top: 0px;
 }
+
+/* aun no entiendo su funcion */
+.image-placeholder {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* imagen de la izquierda */
+.paste-image {
+  background: linear-gradient(to left, #f3f5f7, #f3f5f7);
+  position: absolute;
+  right: -15.22%;
+  left: 0%;
+  width: 115.22%;
+  bottom: 16.57%;
+  top: 17.5%;
+  height: 65.93%;
+}
