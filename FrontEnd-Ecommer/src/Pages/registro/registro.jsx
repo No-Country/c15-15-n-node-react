@@ -26,12 +26,15 @@ export default function Registro() {
                       <span className="hardtech-span2">TECH</span>
                     </span>
                   </div>
-                  <div class="al-alcance-de-un-click">Al alcance de un click</div>
+                  <div className="al-alcance-de-un-click">Al alcance de un click</div>
                 </div>
               </div>
             </div> 
           </div>
-     {/* <div class="sign-up">
+
+
+
+      <div class="sign-up">
         <div class="title">
           <div class="header">
             <div class="content">
@@ -39,6 +42,7 @@ export default function Registro() {
             </div>
           </div>
         </div>
+
         <div class="form-rating">
           <div class="form">
             <div class="form-input">
@@ -78,10 +82,12 @@ export default function Registro() {
             </div>
           </div>
         </div>
+
         <div class="button">
           <div class="crear">Crear</div>
         </div>
       </div>
+
       <div class="button2">
         <svg class="social-icons-facebook-original" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_294_3772)">
@@ -107,7 +113,7 @@ export default function Registro() {
           </svg>
         </div>
         <div class="inicia-sesi-n">Inicia Sesión</div>
-      </div> */}
+      </div> 
     </div>
 
 
