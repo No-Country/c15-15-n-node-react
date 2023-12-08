@@ -1,15 +1,9 @@
-const initialState = {
-  init: []
+const EcommerState = {
+  init:[]
 };
 
-export default function reducer(state = initialState, { type, payload }) {
+export default function reducer(state = EcommerState, { type, payload }) {
   switch (type) {
-
-    case 'GET':
-      return {
-        ...state,
-        init: payload
-      };
 
     default:
       return state;

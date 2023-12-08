@@ -1,0 +1,417 @@
+
+/* esto define el tamaño de la pantalla */
+.sign-up-popup-desktop {
+  background: #ffffff;
+  width: 1440px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* esto define el tamaño de la box */
+.sign-up-popup-desktop, .sign-up-popup-desktop * {
+  box-sizing: border-box;
+}
+
+/* esto define la posicion de la imagen derecha */
+.rectangle-1084 {
+  width: 632px;
+  height: 725px;
+  position: absolute;
+  left: 737px;
+  top: 168px;
+}
+
+/* define los objetos a la derecha */
+.left {
+  height: 1080px;
+  position: absolute;
+  right: 704px;
+  left: 0px;
+  top: 0px;
+}
+
+/* aun no entiendo su funcion */
+.image-placeholder {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* imagen de la izquierda */
+.paste-image {
+  background: linear-gradient(to left, #f3f5f7, #f3f5f7);
+  position: absolute;
+  right: -15.22%;
+  left: 0%;
+  width: 115.22%;
+  bottom: 16.57%;
+  top: 17.5%;
+  height: 65.93%;
+}
+
+/* esta es la clase de la imagen del logo */
+.logo-negativo-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 42.8%;
+  left: 42.66%;
+  width: 14.54%;
+  bottom: 85.65%;
+  top: 3.7%;
+  height: 10.65%;
+}
+
+/* clase del texto del logo */
+.tech-solutions-2 {
+  flex-shrink: 0;
+  width: 58px;
+  height: 53px;
+  position: relative;
+}
+
+/* clase del texto del logo, que define su posicion */
+.logo-name {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 144px;
+  height: 41px;
+  position: relative;
+}
+
+/* clase que le da estilo al texto */
+.hardtech {
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+}
+
+/* le da color a la palabra hard del titulo */
+.hardtech-span {
+  color: #c62265;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* le da color a la palabra TECH */
+.hardtech-span2 {
+  color: #141718;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* le da estilo y color a la palabra al alcanze de un click */
+.al-alcance-de-un-click {
+  color: #130d0d;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* seccion del formulario */
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 456px;
+  position: absolute;
+  right: 160px;
+  top: 220px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.registrate {
+  color: var(--neutral-07-100, #141718);
+  text-align: left;
+  font-family: var(--headline-4-font-family, "Poppins-Medium", sans-serif);
+  font-size: var(--headline-4-font-size, 40px);
+  line-height: var(--headline-4-line-height, 44px);
+  font-weight: var(--headline-4-font-weight, 500);
+  position: relative;
+  flex: 1;
+}
+
+/* formulario */
+.form-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.form-input {
+  border-style: solid;
+  border-color: var(--neutral-03-100, #e8ecef);
+  border-width: 0px 0px 1px 0px;
+  padding: 0px 0px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 456px;
+  height: 40px;
+  position: relative;
+}
+
+.content2 {
+  border-style: solid;
+  border-color: var(--neutral-03-100, #e8ecef);
+  border-width: 0px 0px 1px 0px;
+  padding: 0px 0px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.content3 {
+  flex: 1;
+  height: 32px;
+  position: relative;
+}
+
+.nombre {
+  color: var(--neutral-04-100, #6c7275);
+  text-align: left;
+  font-family: var(--body-2-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-2-font-size, 16px);
+  line-height: var(--body-2-line-height, 26px);
+  font-weight: var(--body-2-font-weight, 400);
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 16px);
+  width: 456px;
+}
+
+.username {
+  color: var(--neutral-04-100, #6c7275);
+  text-align: left;
+  font-family: var(--body-2-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-2-font-size, 16px);
+  line-height: var(--body-2-line-height, 26px);
+  font-weight: var(--body-2-font-weight, 400);
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 16px);
+  width: 456px;
+}
+
+.email {
+  color: var(--neutral-04-100, #6c7275);
+  text-align: left;
+  font-family: var(--body-2-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-2-font-size, 16px);
+  line-height: var(--body-2-line-height, 26px);
+  font-weight: var(--body-2-font-weight, 400);
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 16px);
+  width: 456px;
+}
+
+.password {
+  color: var(--neutral-04-100, #6c7275);
+  text-align: left;
+  font-family: var(--body-2-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-2-font-size, 16px);
+  line-height: var(--body-2-line-height, 26px);
+  font-weight: var(--body-2-font-weight, 400);
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 16px);
+  width: 456px;
+}
+
+.huge-icon-interface-outline-eye {
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 94.74%;
+  width: 5.26%;
+  bottom: 12.5%;
+  top: 12.5%;
+  height: 75%;
+  overflow: visible;
+}
+
+.different-address {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ratio-button {
+  background: var(--neutrals-8, #fcfcfd);
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--neutral-04-100, #6c7275);
+  border-width: 1.5px;
+  padding: 6px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button {
+  background: var(--neutral-07-100, #141718);
+  border-radius: 8px;
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 456px;
+  position: relative;
+}
+
+.crear {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--button-s-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--button-s-font-size, 16px);
+  line-height: var(--button-s-line-height, 28px);
+  font-weight: var(--button-s-font-weight, 500);
+  position: relative;
+}
+
+.button2 {
+  background: var(--neutral-07-100, #141718);
+  border-radius: 8px;
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 209px;
+  height: 42px;
+  position: absolute;
+  left: 1073px;
+  top: 774px;
+}
+
+.social-icons-facebook-original {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+
+.inicia-sesi-n {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--button-s-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--button-s-font-size, 16px);
+  line-height: var(--button-s-line-height, 28px);
+  font-weight: var(--button-s-font-weight, 500);
+  position: relative;
+}
+
+.button3 {
+  background: var(--neutral-07-100, #141718);
+  border-radius: 8px;
+  padding: 10px 39px 10px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 209px;
+  height: 42px;
+  position: absolute;
+  left: 836px;
+  top: 774px;
+}
+
+.social-icons-google-original {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
