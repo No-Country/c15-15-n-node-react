@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { Home, Login, Registro } from './Pages/index.js'
 import store from './store/store.js'
-// import './index.css'
+import './index.css'
 
 
 // de figma a code con uso de autoHTML | Developer Pluging 

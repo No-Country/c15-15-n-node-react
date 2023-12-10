@@ -120,12 +120,14 @@
 //   )
 // }
 
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useState } from "react";
+import { useDispatch, useSelector } from 'react-redux';
 import { PostCreateUser } from '../../store/actions';
 
 export default function Registro() {
   const dispatch = useDispatch();
+  const { register, error } = useSelector((state) => state);
+
 
   const [formData, setFormData] = useState({
     name: '',
@@ -138,8 +140,6 @@ export default function Registro() {
     password: '',
   });
 
-  const [alertMessage, setAlertMessage] = useState('');
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -150,20 +150,7 @@ export default function Registro() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await dispatch(PostCreateUser(formData));
-      console.log(response)
-  
-      if (response && response.payload && response.payload.id) {
-        setAlertMessage(`Usuario creado con éxito, ID: ${response.payload.id}`);
-        // Puedes agregar aquí la lógica para redireccionar o realizar otras acciones después del éxito.
-      } else {
-        setAlertMessage('Error al crear el usuario');
-      }
-    } catch (error) {
-      console.error('Error en el envío del formulario', error);
-      setAlertMessage('Error al enviar el formulario');
-    }
+    dispatch(PostCreateUser(formData)); 
   };
   
 
@@ -171,7 +158,8 @@ export default function Registro() {
   return (
     <div>
       <h1>Registro</h1>
-      {alertMessage && <div>{alertMessage}</div>}
+      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+      {register && <p style={{ color: 'green' }}>{register}</p>}
       <form onSubmit={handleSubmit}>
         {/* Aquí coloca tus campos de formulario */}
         <label>
