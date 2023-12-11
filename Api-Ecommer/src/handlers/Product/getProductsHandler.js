@@ -2,17 +2,26 @@ const { Product } = require('../../db');
 
 const getProductsHandler = async ({ category, subcategory }) => {
   let products;
-  if (subcategory) {
+  if (category && subcategory) {
     products = await Product.findAll({
       where: {
         category: category,
         subcategory: subcategory,
+        isActive: true,
       },
     });
-  } else {
+  } else if (category) {
     products = await Product.findAll({
       where: {
         category: category,
+        isActive: true,
+      },
+    });
+  } else if (subcategory) {
+    products = await Product.findAll({
+      where: {
+        subcategory: subcategory,
+        isActive: true,
       },
     });
   }
