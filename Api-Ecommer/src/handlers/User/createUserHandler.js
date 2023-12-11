@@ -15,8 +15,8 @@ const createUserHandler = async (data) => {
     if (foundUser) {
       throw new Error('User already registered with that email');
     } else {
-      const created = await User.create(data);
-      return created;
+      await User.create(data);
+      return { message: 'The user has been successfully created' };
     }
   } catch (error) {
     console.error(error.message);
