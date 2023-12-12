@@ -1,7 +1,8 @@
+
 const EcommerState = {
-  init: [],
-  register: ".",
-  error: null,
+  init: null,
+  registro: null,
+  error: null
 };
 
 export default function reducer(state = EcommerState, { type, payload }) {
@@ -10,14 +11,19 @@ export default function reducer(state = EcommerState, { type, payload }) {
     case 'POST_CREATE_USER_SUCCESS':
       return {
         ...state,
-        register: "Registro exitoso",
+        registro: payload,
       };
       
     case 'POST_CREATE_USER_FAILURE':
       return {
         ...state,
-        register: "Error en el registro",
-        error: payload,
+        registro: payload
+      };
+    case 'POST_CREATE_USER_FAILURE_CORS':
+      return {
+        ...state,
+        registro: "Ya se registro, no se puede volver a registrar",
+        error: payload
       };
 
 

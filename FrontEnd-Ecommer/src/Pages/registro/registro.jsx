@@ -126,8 +126,7 @@ import { PostCreateUser } from '../../store/actions';
 
 export default function Registro() {
   const dispatch = useDispatch();
-  const { register, error } = useSelector((state) => state);
-
+  const register = useSelector((state) => state.registro);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -158,7 +157,7 @@ export default function Registro() {
   return (
     <div>
       <h1>Registro</h1>
-      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+      {/* {error && <p style={{ color: 'red' }}>Error: {error}</p>} */}
       {register && <p style={{ color: 'green' }}>{register}</p>}
       <form onSubmit={handleSubmit}>
         {/* Aquí coloca tus campos de formulario */}
