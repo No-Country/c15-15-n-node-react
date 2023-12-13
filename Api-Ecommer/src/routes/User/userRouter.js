@@ -8,6 +8,8 @@ const {
   getAllUser,
   updateUser,
   deleteUser,
+  softDeleteUser,
+  reactivateUser,
 } = require('../../controllers/User');
 
 const {
@@ -25,5 +27,7 @@ router.put('/users/updatePassword', updatePasswordValidation, updatePassword);
 router.put('/users/updateUser', updateUser);
 router.get('/users', getAllUser);
 router.delete('/users', deleteUser);
+router.delete('/users/:id', softDeleteUser);
+router.put('/users/:id', reactivateUser);
 
 module.exports = router;

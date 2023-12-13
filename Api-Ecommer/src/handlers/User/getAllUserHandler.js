@@ -1,11 +1,7 @@
 const { User } = require('../../db');
 
 async function getAllUserHandler() {
-  const users = await User.findAll({
-    where: {
-      isActive: true,
-    },
-  });
+  const users = await User.findAll();
   return users;
 }
 
