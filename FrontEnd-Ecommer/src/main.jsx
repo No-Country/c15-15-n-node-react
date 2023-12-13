@@ -16,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path = "/" element={<Registro/>}/>
           <Route path = "/home" element={<Home/>}/>
+          <Route path = "/login" element={<Login/>}/>
         </Routes>
       </BrowserRouter>
     </Provider>
