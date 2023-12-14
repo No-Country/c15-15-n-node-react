@@ -50,6 +50,26 @@ module.exports = (sequelize) => {
         },
       },
 
+      category: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: 'The name field cannot be empty',
+          },
+        },
+      },
+
+      subcategory: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: 'The name field cannot be empty',
+          },
+        },
+      },
+
       isActive: {
         type: DataTypes.BOOLEAN,
         defaultValue: true,
