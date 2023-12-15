@@ -1,4 +1,4 @@
-const { Order, Detailorder } = require('../../db');
+const { Order, Detailorder, Product } = require('../../db');
 
 const getOrderDetailsHandler = async (id) => {
   const order = await Order.findOne({ where: { id } });
@@ -7,6 +7,7 @@ const getOrderDetailsHandler = async (id) => {
   }
   const details = await Detailorder.findAll({
     where: { OrderId: id, isActive: true },
+    include: [Product],
   });
   return details;
 };

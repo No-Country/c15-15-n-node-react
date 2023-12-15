@@ -15,6 +15,7 @@ const addDetailToOrderHandler = async (id, data) => {
   }
   const income = product.price * quantity;
   const detail = await Detailorder.create({ ...data, OrderId: id, income });
+  await detail.setProduct(product);
   await Product.update(
     { stock: product.stock - quantity },
     { where: { id: productId } },
