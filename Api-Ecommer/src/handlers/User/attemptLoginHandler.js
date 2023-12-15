@@ -13,7 +13,7 @@ const attemptLoginHandler = async (email, password) => {
     if (!passwordMatch) {
       throw new Error(`Incorrect password for email ${email}`);
     }
-    return user;
+    return { message: 'Access granted. Login successful.' };
   } catch (error) {
     console.error(error.message);
     throw new Error('An error occurred while processing your request');
