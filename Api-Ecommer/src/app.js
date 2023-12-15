@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const hcRouter = require('./routes/hcRouter');
 const userRouter = require('../src/routes/User/userRouter');
 const productRouter = require('../src/routes/Product/productRouter');
+const orderRouter = require('../src/routes/Order/orderRouter');
+const detailOrderRouter = require('../src/routes/Detailorder/detailOrderRouter');
 const errorHandler = require('../src/middlewares/errorHandler');
 
 const server = express();
@@ -25,6 +27,8 @@ server.use((req, res, next) => {
 server.use('/', hcRouter);
 server.use('/', userRouter);
 server.use('/', productRouter);
+server.use('/', orderRouter);
+server.use('/', detailOrderRouter);
 
 server.use(errorHandler);
 
