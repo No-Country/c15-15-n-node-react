@@ -14,8 +14,12 @@ const addDetailToOrderHandler = async (id, data) => {
     throw new Error('Not enough stock for the product');
   }
   const income = product.price * quantity;
-  const detail = await Detailorder.create({ ...data, OrderId: id, income });
-  await detail.setProduct(product);
+  const detail = await Detailorder.create({
+    ...data,
+    OrderId: id,
+    income,
+    ProductId: productId,
+  });
   await Product.update(
     { stock: product.stock - quantity },
     { where: { id: productId } },
